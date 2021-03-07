@@ -20,7 +20,7 @@ export default function App() {
 			<Header />
 			<Main>
 				{
-					launches.map((launch, index) => <Card key={`launch_${index}`} launch={launch} index={index} />)
+					launches.map((launch, index) => <Card key={`launch_${index}`} launch={launch} />)
 				}
 			</Main>
 			<Footer />
