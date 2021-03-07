@@ -1,0 +1,38 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  background: #040040;
+  background: linear-gradient(150deg, #040040 5%, #3d0042 95%);
+}
+
+header {
+  text-align: center;
+}
+
+main {
+  border: 1px solid green;
+  padding: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+  background: lightcoral;
+}
+
+footer {
+  text-align: center;
+}
