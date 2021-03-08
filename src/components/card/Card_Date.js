@@ -23,6 +23,6 @@ export default function Card_Date({ value, ...props }) {
 	}, [])
 
 	return (
-		<p>{date} {date_precision === 'hour' && time}</p>
+		<p className="card__date">{date} {date_precision === 'hour' && time}</p>
 	)
 }

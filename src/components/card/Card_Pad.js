@@ -11,6 +11,6 @@ export default function Card_Pad({ launchpad, ...props }) {
 	}, [])
 
 	return (
-		<p>{pad.name}</p>
+		<p className="card__pad">{pad.name}</p>
 	)
 }
