@@ -4,7 +4,7 @@ import useAPI from './hooks/useAPI'
 
 import Header from './components/Header'
 import Main from './components/Main'
-import Card from './components/Card'
+import Card from './components/card/Card'
 import Footer from './components/Footer'
 
 export default function App() {
