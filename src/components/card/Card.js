@@ -1,6 +1,5 @@
 
-import React, { useState, useEffect } from 'react'
-import useAPI from '../../hooks/useAPI'
+import React from 'react'
 
 import Card_Title from './Card_Title'
 import Card_Date from './Card_Date'
