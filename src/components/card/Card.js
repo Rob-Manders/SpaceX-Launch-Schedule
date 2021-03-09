@@ -1,8 +1,7 @@
 
 import React from 'react'
 
-import Card_Title from './Card_Title'
-import Card_Date from './Card_Date'
+import Date from '../Date'
 import Card_Core from './Card_Core'
 import Card_Pad from './Card_Pad'
 
@@ -17,8 +16,8 @@ export default function Card({ launch, ...props }) {
 
 	return (
 		<div className="card">
-			<Card_Title name={name} />
-			<Card_Date value={{date_unix, date_precision}} />
+			<h2 className="card__title">{name}</h2>
+			<Date value={{date_unix, date_precision}} />
 			<Card_Core cores={cores} />
 			<Card_Pad launchpad={launchpad} />
 		</div>
