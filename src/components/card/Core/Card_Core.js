@@ -1,9 +1,10 @@
 
-import React, { useState, useEffect } from 'react'
-import useAPI from '../../hooks/useAPI'
-import Card_Section from './Card_Section'
+import React, { useState, useEffect, useContext } from 'react'
+import { CardContext } from '../Card'
+import useAPI from '../../../hooks/useAPI'
 
-export default function Card_Core({ cores, ...props }) {
+export default function Card_Core({ ...props }) {
+	const { cores } = useContext(CardContext)
 	const [coreAssigned, setCoreAssigned] = useState(false)
 	const [core, setCore] = useState({})
 
@@ -16,7 +17,7 @@ export default function Card_Core({ cores, ...props }) {
 	})
 
 	return (
-		<Card_Section section="core">
+		<>
 			{
 				coreAssigned
 				? 
@@ -33,6 +34,6 @@ export default function Card_Core({ cores, ...props }) {
 				:
 				<p>No core assigned.</p>
 			}
-		</Card_Section>
+		</>
 	)
 }

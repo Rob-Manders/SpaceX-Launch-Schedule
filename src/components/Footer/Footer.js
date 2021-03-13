@@ -1,7 +1,7 @@
 
 import React from 'react'
-import Icon_GitHub from './icons/Icon_GitHub'
-import Icon_LinkedIn from './icons/Icon_LinkedIn'
+import Icon_GitHub from '../icons/Icon_GitHub'
+import Icon_LinkedIn from '../icons/Icon_LinkedIn'
 
 export default function Footer({ ...props }) {
 	return (

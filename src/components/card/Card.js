@@ -1,12 +1,20 @@
 
-import React from 'react'
+export { default as Card_Core } from './Core/Card_Core'
+export { default as Card_Date } from './Date/Card_Date'
+export { default as Card_Header } from './Header/Card_Header'
+export { default as Card_Launchpad } from './Launchpad/Card_Launchpad'
+export { default as Card_Section } from './Section/Card_Section'
 
-import Date from '../Date'
-import Card_Header from './Card_Header'
-import Card_Core from './Card_Core'
-import Card_Pad from './Card_Pad'
+import React, { createContext } from 'react'
 
-export default function Card({ launch, ...props }) {
+// import Card_Header from './Header/Card_Header'
+// import Card_Date from './Date/Card_Date'
+// import Card_Core from './Core/Card_Core'
+// import Card_Launchpad from './Launchpad/Card_Launchpad'
+
+export const CardContext = createContext()
+
+export function Card({ children, launch, ...props }) {
 	const {
 		name,
 		date_unix,
@@ -17,11 +25,17 @@ export default function Card({ launch, ...props }) {
 	} = launch	
 
 	return (
-		<div className="card">
-			<Card_Header patch={links.patch.small} name={name} />
-			<Date value={{date_unix, date_precision}} />
-			<Card_Pad launchpad={launchpad} />
-			<Card_Core cores={cores} />
-		</div>
+		<CardContext.Provider value={{
+			name,
+			date_unix,
+			date_precision,
+			cores,
+			launchpad,
+			links
+		}}>
+			<div className="card">
+				{children}
+			</div>
+		</CardContext.Provider>
 	)
 }

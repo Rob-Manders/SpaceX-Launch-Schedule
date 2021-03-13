@@ -1,11 +1,11 @@
 
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
+import { CardContext } from '../Card'
 
-export default function Card_Date({ value, ...props }) {
+export default function Card_Date({ ...props }) {
+	const { date_unix, date_precision } = useContext(CardContext)
 	const [date, setDate] = useState('')
 	const [time, setTime] = useState('')
-
-	const { date_unix, date_precision } = value
 
 	function parseDate() {
 		const rawDate = new Date(date_unix * 1000)
