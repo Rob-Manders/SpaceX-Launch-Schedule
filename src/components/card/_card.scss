@@ -1,0 +1,18 @@
+
+@use './Header/card_header' as *;
+@use './Date/card_date' as *;
+@use './Section/card_section' as *;
+
+.card {
+	height: 380px;
+	max-width: 300px;
+	margin: 10px;
+	background: white;
+	color: #333;
+	border-radius: 7px;
+
+	@include card_header;
+	@include card_date;
+	@include card_section;
+}
+

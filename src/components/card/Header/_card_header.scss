@@ -1,0 +1,35 @@
+
+@mixin card_header {
+	&__header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0.65rem;
+
+		img {
+			height: 50px;
+			width: 50px;
+			object-fit: cover;
+			background-color: lightgray;
+			border-radius: 50%;
+		}
+
+		.patch--placeholder {
+			height: 45px;
+			width: 45px;
+			background-color: lightgray;
+			border-radius: 50%;
+			padding: 8px 8px 7px 7px;
+
+			svg {
+				height: 30px;
+				width: 30px;
+			}
+		}
+
+		h2 {
+			margin: 0;
+			text-align: center;
+		}
+	}
+}
