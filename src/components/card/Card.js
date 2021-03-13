@@ -20,8 +20,8 @@ export default function Card({ launch, ...props }) {
 		<div className="card">
 			<Card_Header patch={links.patch.small} name={name} />
 			<Date value={{date_unix, date_precision}} />
-			<Card_Core cores={cores} />
 			<Card_Pad launchpad={launchpad} />
+			<Card_Core cores={cores} />
 		</div>
 	)
 }

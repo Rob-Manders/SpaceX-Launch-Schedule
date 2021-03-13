@@ -9,8 +9,8 @@ export default function Footer({ ...props }) {
 			<p>Created by Rob Manders using the <a href="https://github.com/r-spacex/SpaceX-API">SpaceX API</a>.</p>
 
 			<div className="social">
-				<Icon_GitHub href="https://github.com/Rob-Manders/SpaceX-Launch-Schedule" />
-				<Icon_LinkedIn href="https://www.linkedin.com/in/robert-manders-925b88202/" />
+				<Icon_GitHub href="https://github.com/Rob-Manders/SpaceX-Launch-Schedule" aria-label="github" />
+				<Icon_LinkedIn href="https://www.linkedin.com/in/robert-manders-925b88202/" aria-lavel="linked in"/>
 			</div>
 
 			<p className="disclaimer">

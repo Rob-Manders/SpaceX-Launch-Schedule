@@ -1,9 +1,21 @@
 
 header {
 	text-align: center;
-	padding-top: 1.5rem;
+	padding: 1.5rem;
+
+	p {
+		margin: 0;
+		margin-bottom: 0.5rem;
+		font-size: 1.5rem;
+		font-weight: 500;
+	}
 
 	h1 {
+		font-size: 2.5rem;
 		margin: 0;
+
+		@media (max-width: 450px) {
+			font-size: 2rem;
+		}
 	}
 }

@@ -13,7 +13,7 @@ export default function Card_Pad({ launchpad, ...props }) {
 
 	return (
 		<Card_Section section="launchpad">
-			<p>{pad.full_name}</p>
+			<p><strong>{pad.full_name}</strong></p>
 			<p>{pad.region}</p>
 		</Card_Section>
 	)
