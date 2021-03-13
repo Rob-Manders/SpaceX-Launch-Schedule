@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from 'react'
 import useAPI from '../../hooks/useAPI'
+import Card_Section from './Card_Section'
 
 export default function Card_Core({ cores, ...props }) {
 	const [coreAssigned, setCoreAssigned] = useState(false)
@@ -15,7 +16,7 @@ export default function Card_Core({ cores, ...props }) {
 	})
 
 	return (
-		<div className="card__core">
+		<Card_Section section="core">
 			{
 				coreAssigned
 				? 
@@ -26,6 +27,6 @@ export default function Card_Core({ cores, ...props }) {
 				:
 				<p>No core assigned.</p>
 			}
-		</div>
+		</Card_Section>
 	)
 }

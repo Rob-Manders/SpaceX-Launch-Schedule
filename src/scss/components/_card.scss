@@ -1,20 +1,65 @@
 
 .card {
-	height: 200px;
+	height: 400px;
 	width: 300px;
 	margin: 10px;
-	padding: 10px;
 	background: white;
 	color: #333;
-	border-radius: 3px;
+	border-radius: 7px;
 
-	&__title {
-		margin: 0.25rem 0;
-		text-align: center;
+	&__header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0.5rem;
+
+		img {
+			height: 50px;
+			width: 50px;
+			object-fit: cover;
+			background-color: lightgray;
+			border-radius: 50%;
+		}
+
+		.patch--placeholder {
+			height: 45px;
+			width: 45px;
+			background-color: lightgray;
+			border-radius: 50%;
+			padding: 8px 8px 7px 7px;
+
+			svg {
+				height: 30px;
+				width: 30px;
+			}
+		}
+
+		h2 {
+			margin: 0;
+			text-align: center;
+		}
 	}
 
-	&__date {
-		text-align: center;
+	&__section {
+		margin-top: 2rem;
+
+		&--header {
+			text-align: center;
+			font-size: 0.75rem;
+			font-weight: 700;
+			text-transform: uppercase;
+			display: flex;
+			align-items: center;
+			margin: 0;
+
+			span {
+				width: 100%;
+				height: 3px;
+				background-color: lightgray;
+				margin: 0.5rem;
+				border-radius: 1.5px;
+			}
+		}
 	}
 }
 
