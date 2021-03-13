@@ -6,6 +6,8 @@ import Icon_LinkedIn from './icons/Icon_LinkedIn'
 export default function Footer({ ...props }) {
 	return (
 		<footer>
+			<p>Created by Rob Manders using the <a href="https://github.com/r-spacex/SpaceX-API">SpaceX API</a>.</p>
+
 			<div className="social">
 				<Icon_GitHub href="https://github.com/Rob-Manders/SpaceX-Launch-Schedule" />
 				<Icon_LinkedIn href="https://www.linkedin.com/in/robert-manders-925b88202/" />

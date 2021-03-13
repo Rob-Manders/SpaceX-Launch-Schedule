@@ -11,4 +11,14 @@ body {
 
 	font-family: 'Montserrat', sans-serif;
 	color: white;
+
+	a {
+		color: white;
+		transition: 150ms;
+
+		&:hover,
+		&:focus {
+			color: orange;
+		}
+	}
 }

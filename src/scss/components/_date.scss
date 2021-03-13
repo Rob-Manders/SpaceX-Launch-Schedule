@@ -1,6 +1,14 @@
 
 .date {
+	height: 3rem;
 	text-align: center;
-	font-weight: 700;
-	margin: 0;
+	font-size: 1.8rem;
+	font-weight: 600;
+	color: rgb(35, 28, 117);
+	margin: 0.5rem;
+	padding: 0.55rem 0;
+
+	span {
+		font-weight: 700;
+	}
 }

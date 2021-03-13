@@ -21,8 +21,14 @@ export default function Card_Core({ cores, ...props }) {
 				coreAssigned
 				? 
 				<>
-					<p>Core: {core.serial}</p>
-					<p>Flights: {core.reuse_count}</p>
+					<p>
+						<span>Serial Number:</span>
+						<span><strong>{core.serial}</strong></span>
+					</p>
+					<p>
+						<span>Previous Flights:</span>
+						<span><strong>{core.reuse_count}</strong></span>
+					</p>
 				</>
 				:
 				<p>No core assigned.</p>
