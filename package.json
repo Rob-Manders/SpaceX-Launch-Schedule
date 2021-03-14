@@ -2,12 +2,7 @@
   "name": "SpaceX-Launch-Schedule",
   "version": "1.0.0",
   "description": "",
-  "main": "./src/index.html",
-  "targets": {
-    "app": {
-      "distDir": "./dist"
-    }
-  },
+  "main": "./dist/index.html",
   "scripts": {
     "start": "parcel ./src/index.html",
     "deploy": "parcel build ./src/index.html"
@@ -16,7 +11,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^2.0.0-beta.1",
+    "@parcel/transformer-sass": "^2.0.0-nightly.628",
+    "parcel": "^2.0.0-nightly.626",
     "sass": "^1.32.8"
   },
   "dependencies": {
