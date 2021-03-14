@@ -1,7 +1,7 @@
 
-@use './Header/card_header' as *;
-@use './Date/card_date' as *;
-@use './Section/card_section' as *;
+@use './Header/card_header';
+@use './Date/card_date';
+@use './Section/card_section';
 
 .card {
 	min-height: 380px;
@@ -10,10 +10,6 @@
 	background: white;
 	color: #333;
 	border-radius: 7px;
-
-	@include card_header;
-	@include card_date;
-	@include card_section;
 
 	@media (max-width: 330px) {
 		width: unset;
