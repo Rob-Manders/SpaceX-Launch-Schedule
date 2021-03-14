@@ -4,8 +4,8 @@
 @use './Section/card_section' as *;
 
 .card {
-	height: 380px;
-	max-width: 300px;
+	min-height: 380px;
+	width: 300px;
 	margin: 10px;
 	background: white;
 	color: #333;
@@ -14,5 +14,10 @@
 	@include card_header;
 	@include card_date;
 	@include card_section;
+
+	@media (max-width: 330px) {
+		width: unset;
+		max-width: 300px;
+	}
 }
 
