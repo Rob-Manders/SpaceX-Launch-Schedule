@@ -11,7 +11,7 @@ import {
 	Card_Launchpad,
 	Card_Core,
 	Card_Section
-} from './components/Card/Card'
+} from './components/Card-fix/Card'
 
 export default function App() {
 	const [ launches, setLaunches ] = useState([])
